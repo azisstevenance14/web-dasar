@@ -1,0 +1,277 @@
+/* 
+=============================================================
+1. Reset Dasar
+=============================================================
+Menghilangkan margin dan padding bawaan browser
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* 
+===============================================================
+2. Header
+===============================================================
+Bagian sambutan dengan warna gradasi
+*/
+
+.header{
+    max-width: 900px;
+    margin: 0 auto 24px;
+    padding: 32px;
+    background: linear-gradient(135deg, #1f3e83, #67649c);
+    color: white;
+    border-radius: 16px;
+}
+
+.header h1{
+    margin: 4px 0;
+    font-size: 32px;
+}
+
+.header p{
+    margin: 4px 0;
+}
+
+
+/* 
+===================================================================
+3. Container Utama
+===================================================================
+Membatasi lebar konten dan memusatkannya
+*/
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+
+    /* Menyusun kartu dalam satu kolom */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+/* 
+=====================================================================
+4. Style Kartu
+=====================================================================
+digunakan oleh profil, progress, dan aktivitas
+*/
+
+.card {
+    padding: 24px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+.card h2{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+/* 
+======================================================================
+5. Label Dan Teks Tambahan
+======================================================================
+*/
+
+.label {
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header .label{
+    color: #dbeafe;
+}
+
+.description{
+    margin-top: 0;
+    color: #64748b;
+}
+
+/* 
+========================================================================
+6. Kartu Profil
+========================================================================
+Flexbox menyusun avatar dan teks berdampingan
+*/
+
+.profile-card{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar{
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #dbeafe;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profile-card h2{
+    margin: 4px 0;
+}
+
+.profile-card p:last-child{
+    margin: 0;
+    color: #64748b;
+}
+
+
+/* 
+============================================================================
+7. Progress Bar
+============================================================================
+Lebar bagian berwarna diubah oleh Javascript
+*/
+
+.progress-card h2{
+    margin: 8px 0 0;
+    font-size: 28px;
+}
+
+#persentase {
+    margin-top: 4px;
+    color: #64748b;
+}
+
+.progress-track{
+    width: 100%;
+    height: 12px;
+    overflow: hidden;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #2563eb;
+    border-radius: 20px;
+
+    /* Membuat perubahan progreses terasa lebih halus*/
+    transition: width 0.3s ease;
+}
+
+
+/* 
+=============================================================================
+8. Daftar Aktivitas
+=============================================================================
+*/
+
+.activity-list{
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 0;
+}
+
+.activity-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.activity-item:last-child{
+    border-bottom: none;
+}
+
+.activity-name{
+    overflow-wrap: anywhere;
+}
+
+/* 
+Tampilan teks ketika aktivitas selesai
+*/
+.activity-name.selesai{
+    color: #64748b;
+    text-decoration: line-through;
+}
+
+/* 
+==============================================================================
+9. Tombol Aktivitas
+==============================================================================
+*/
+
+.btn-toggle{
+    flex-shrink: 0;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-toggle:hover{
+    background-color: #1d4ed8;
+}
+
+/* Warna Tombol jika aktivitas sudah selesai */
+.btn-toggle.sudah-selesai{
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.btn-toggle.sudah-selesai:hover{
+    background-color: #bbf7d0;
+}
+
+
+/* 
+================================================================================
+10. Responsive
+================================================================================
+*/
+
+@media (max-width :600px){
+    body{
+        padding: 14px;
+    }
+
+    .header{
+        padding: 24px;
+    }
+
+    .header h1{
+        font-size: 26px
+    }
+
+    .card{
+        padding: 18px;
+    }
+
+    .activity-item{
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,191 @@
+/* 
+
+======================================
+MINI PROJECT
+======================================
+
+Bagian 1 :
+1. Navbar
+2. Menu
+3. Hero
+
+*/
+
+/* 
+=======================================
+RESET SEDERHANA
+=======================================
+Menghilangkan mergin bawaan browser
+agar kita lebih mudah mengatur layout.
+*/
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 
+
+========================================
+Navbar
+========================================
+
+*/
+.navbar{
+    /* 
+        Flexbox digunakan untuk mengatur
+        logo dan menu agar berada dalam 
+        satu baris
+    */
+    display: flex;
+
+    /* 
+        Logo berada di kiri.
+        menu berada di kanan.
+    */
+
+    justify-content: space-between;
+
+    /* 
+        Membuat logo dan menu berada di tengah secara vertikal
+    */
+    align-items: center;
+    
+    /* 
+        Memberikan jarak bagian dalam navbar
+    */
+    padding: 20px;
+    background-color: #222;
+}
+
+
+/* 
+
+=========================================
+Logo
+=========================================
+
+*/
+
+.logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* 
+
+==========================================
+Menu
+==========================================
+
+*/
+
+.menu{
+    /* 
+        Menu juga dibuat menjadi flex container
+    */
+
+    display: flex;
+    gap: 20px;
+}
+
+/* 
+=============================================
+Link Menu
+=============================================
+*/
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+/* 
+
+==============================================
+Pseudo-class
+==============================================
+Ketika mouse diarahkan ke link warnanya berubah
+*/
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+/* 
+
+===============================================
+Hero
+===============================================
+
+*/
+
+.hero{
+    /* 
+        Memberikan jarak bagian dalam.
+    */
+
+    padding: 100px 20px;
+
+    /* 
+        Membuat text berada di tengah
+    */
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+
+/* 
+================================================
+Judul Hero
+================================================
+*/
+
+.hero h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+/* 
+
+================================================
+Deskripsi Hero
+================================================
+
+*/
+.hero p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* 
+
+================================================
+Tombol
+================================================
+
+*/
+
+.hero button{
+    padding: 12px 24px;
+    border: none;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* 
+
+=================================================
+Ketika Mouse di arahkan ke Tombol
+=================================================
+
+*/
+
+.hero button:hover{
+    background-color: #555;
+}

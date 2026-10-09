@@ -1,0 +1,71 @@
+/* 
+
+=======================================
+BOX MODEL
+=======================================
+
+Setiap elemen HTML dapat dianggap sebagai kotak
+
+Box Model terdiri dari :
+
+Content = isi dari sebuah Element
+Padding = jarak antara Content dengan Border
+Border  = Garis yang mengelilingi content dan padding
+Margin  = Mengatur jarak antara kotak kedua elemen diluar kotak
+
+*/
+
+
+/* 
+
+======================================
+Contoh satu
+======================================
+
+content adalah isi dari sebuah element. 
+contohnya :
+
+    <div>
+        Ini adalah content    
+    </div>
+
+*/
+
+.kotak{
+    /* memberikan Warna background */
+    background-color: lightblue; 
+
+    /* Mengatur Ukuran Lebar Content */
+    width: 300px;
+
+    /* Mengatur ukuran Tinggi Content */
+    height: 100px;
+
+    /* Mengatur Padding */
+    padding: 20px;
+
+    /* Menagatur Border Content */
+    border: 3px solid black;
+}
+
+
+/* 
+
+========================================
+Contoh Dua
+========================================
+
+
+*/
+
+.kotak-kedua{
+    background-color: lightblue;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    border: 3px solid green;
+    margin: 30px;
+}
+
+
+

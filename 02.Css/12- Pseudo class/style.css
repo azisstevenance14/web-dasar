@@ -1,0 +1,146 @@
+/* 
+
+==============================================
+Pseudo Class
+==============================================
+Pseudo-class digunaknan untuk memberikan style
+berdasarkan kondisi tertentu.
+
+contoh :
+:hover
+:focus
+:active
+:first-child
+:last-child
+:nth-child()
+
+*/
+
+/* 
+
+=================================================
+1. Hover
+=================================================
+style ini akan aktif ketika mouse diarahkan ke tombol
+
+*/
+.tombol{
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* 
+ketika mouse berada di atas tombol,
+background berubah menjadi blue.
+
+*/
+.tombol:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+/* 
+
+=================================================
+2. Focus
+=================================================
+:focus aktif ketika element mendapatkan Focus
+
+pada input, biasanya terjadi ketika kita klik
+atau masuk menggunakan keyboard.
+*/
+
+.input-nama{
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+/* 
+ketika input mendapatkan focus,
+border akan berubah menjadi blue
+
+*/
+
+.input-nama:focus{
+    border: 2px solid red;
+    outline: none;
+}
+
+
+/* 
+
+====================================================
+3. active
+====================================================
+:active aktif ketika element sedang di tekan
+
+*/
+.tombol-active{
+    padding: 10px 20px;
+    background-color: lightgreen;
+    border: 2px solid green;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* 
+saat tombol ditekan dan belum dilepas,
+style :active akan aktif
+*/
+
+.tombol-active:active{
+    background-color: green;
+    color: white;
+}
+
+
+/* 
+
+======================================================
+4. First Child
+======================================================
+memilih element yang menjadi anak pertama dari parent
+
+*/
+
+.daftar p:first-child{
+    color: red;
+    font-weight: bold;
+}
+
+
+/* 
+
+=======================================================
+5. Last Child
+=======================================================
+Memilih element yang menjadi anak terkahir dari parent
+
+*/
+
+.daftar-terakhir p:last-child{
+    color: blue;
+    font-weight: bold;
+}
+
+
+/* 
+
+========================================================
+6. NTH Child
+========================================================
+memilih element berdasarkan urutannya
+
+nth-child(2) = memilih anak ke-2
+
+*/
+
+.daftar-urutan p:nth-child(2){
+    color: orange;
+    font-weight: bold;
+}
+

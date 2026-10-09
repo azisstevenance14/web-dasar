@@ -1,0 +1,108 @@
+/* Text dan Font
+
+pada materi ini kita akan belajar property CSS
+yang digunakan untuk mengatur tulisan.
+
+*/
+
+
+/* 
+=============================================
+01. Color
+=============================================
+
+*/
+
+h1{
+/* Color digunkan untuk mengatur warna tulisan */
+ color: blue;
+
+
+ /* text Align digunkan untuk mengatur Posisi Horizontal tulisa
+    center untuk mengatur tulisan berada di tengah 
+ */
+ text-align: center;
+
+
+ /* 
+ Font size digunakan untuk menagatur Ukuran tulisan
+ */
+
+ font-size: 32px;
+}
+
+
+/* 
+
+==============================================
+02. font Family
+==============================================
+
+ font family digunakan untuk menetukan jenis huruf
+
+*/
+
+.deskripsi{
+    font-family: arial, sans-serif;
+
+    /* Line Height digunhakan untuk mengatur jarak antar baris 
+       semakin besar nilainya, semakin renggang jarak antar baris    
+    */
+
+    line-height: 1.8;
+}
+
+
+/* 
+
+================================================
+03. Font Weight
+================================================
+
+font weight digunakan untuk mengatur ketebalan Tulisan
+bold = tebal
+
+*/
+
+.contoh{
+    font-weight: bold;
+
+    /* 
+    Font style digunakan untuk mengatur gaya tulisan
+    
+    italic = miring
+    
+    */
+    font-style: italic;
+
+    /* 
+     letter-spacing digunakan untuk mengatur Jarak antar Huruf
+
+     2px berarti setiap diberi jarak tambahan sebesar 2px
+    */
+
+    letter-spacing: 2px;
+
+}
+
+
+/* 
+
+===================================================
+04. Text Decoration
+===================================================
+
+text-decoration digunakan untuk membarikan dekorasi 
+pada tulisan
+
+underline = garis bawah
+
+*/
+
+a{
+    text-decoration: underline;
+}
+
+
+
+

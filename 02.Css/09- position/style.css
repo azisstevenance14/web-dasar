@@ -1,0 +1,180 @@
+/* 
+
+==========================================
+CSS Position
+==========================================
+Position digunakan untuk menentukan bagaimana element ditempatkan.
+
+Jenis Position :
+
+Static
+Relative
+Absolute
+Fixed
+Sticky
+
+*/
+
+
+/* 
+
+==========================================
+1. Static
+==========================================
+Static adalah posisi default sebuah element
+
+Element mengikuti posisi normal berdasarkan struktur HTML.
+
+top, right, bottom, dan left tidak bekerja pada static
+*/
+
+.static-box{
+    position: static;
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+
+/* 
+
+===========================================
+2. Relative
+===========================================
+Relative membuat element tetap berada pada posisi Normalnya
+
+tetepi sekarang kita bisa menggesernya menggunakan :
+
+top
+right
+bottom
+left
+
+
+*/
+.relative-box{
+    position: relative;
+    top: 20px;
+    background-color: lightgreen;
+    padding: 20px;
+    border: 2px solid green;
+}
+
+
+/* 
+
+===========================================
+3. Absolute
+===========================================
+Absolute membuat element keluar dari posisi normalnya.
+
+Element akan mencari parent terdekat yang memilki position selain static.
+
+pada contoh ini parent :
+.absolute-continer 
+
+memiliki position : relative.
+
+Maka absolute-box akan menggunakan 
+.absolute-continer sebagai acuan.
+
+*/
+
+.absolute-container{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background-color: lightyellow;
+    border: 2px solid orange;
+}
+
+.absolute-box{
+    position: absolute;
+    /* 
+        Jarak dari bagian atas parent
+    */
+    top: 20px;
+    right: 20px;
+    background-color: orange;
+    padding: 20px;
+    border: 2px solid darkblue;
+
+}
+
+
+/* 
+
+==========================================
+4. Fixed
+==========================================
+Fixed merupakan element tetap berada
+pada posisi tertentu terhadap layar.
+
+Ketika halaman di-scroll,
+element tetap berada di tempatnya
+
+*/
+
+.fixed-box{
+    position: fixed;
+
+    /* 
+        Jarak dari bagian bawah layar
+    */
+
+    bottom: 20px;
+    /* 
+        Jarak dari bagian kanan layar.    
+    */
+
+    right: 20px;
+    background-color: lightcoral;
+    border: 2px solid red;
+}
+
+
+/* 
+
+===========================================
+5. Sticky
+===========================================
+Sticky merupakan gabungan perilaku relative dan fixed.
+
+Element awalnya mengikuti posisi normal.
+
+Ketika kita scroll sampai batas terntu,
+element akan menempel pada posisi yang di tentukan.
+
+*/
+
+.sticky-box{
+    position: sticky;
+    /* 
+        Ketika mencapai bagian atas layar,
+        element akan menempel 0px dari layar atas.
+    
+    */
+
+    top: 0;
+    padding: 20px;
+    border: 2px solid purple;
+}
+
+/* 
+
+==============================================
+Tambahan Sticky
+==============================================
+
+
+*/
+.isi{
+    /* 
+        Membuat halaman panjang efek fixed dan sticky
+        bisa kita lihat ketika kita scrolling.
+    */
+
+    height: 1000px;
+    padding: 20px;
+    background-color: #f2f2f2f2;
+}

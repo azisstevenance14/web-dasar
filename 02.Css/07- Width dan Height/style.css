@@ -1,0 +1,105 @@
+/* 
+
+===============================
+Width dan Height
+===============================
+
+witdh = Mengatur lebar
+Height = Mengatur Tinggi
+max-witdh = batas maksimal lebar
+min-width = batas minimal lebar
+max-height = batas maksimal tinggi 
+
+
+*/
+
+/* 
+
+================================
+width
+================================
+
+*/
+.width-box{
+    width: 300px;
+    background-color: lightblue;
+    border: 2px solid blue;
+
+}
+
+/* 
+
+=================================
+Height
+=================================
+Height digunakan untuk mengatur tinggi sebuah element
+
+150px berarti tinggi element adalah 150px.
+
+*/
+
+.height-box{
+    height: 150px;
+    background-color: lightgreen;
+    border: 2px solid green;
+}
+
+/* 
+
+=================================
+Max-Width
+=================================
+
+max-width digunakan untuk menentukan Batas Maksimal Lebar sebuah element
+
+width : 100% 
+berarti element mencoba digunakan seluruh ruang yang tersedia
+
+Tetapi :
+max-width : 500px;
+membuat element tidak boleh lebih dari 500px
+
+*/
+.max-width-box{
+    width :100%;
+    max-width: 500px;
+    background-color: lightyellow;
+    border : 2px solid orange;
+}
+
+
+/* 
+
+===================================
+Min-Width
+===================================
+min-width digunakan untuk menentukan Batas Minimal Lebar sebuah element.
+
+Element tidak boleh memiliki kurang dari 300px.
+
+*/
+
+
+.min-width-box{
+    min-width: 300px;
+    background-color: lightpink;
+    border: 2px solid red;
+}
+
+
+/* 
+
+===================================
+Max-Height
+===================================
+Max-height digunakan untuk menentukan Batas Maksimal tinggi sebuah element
+
+*/
+
+.max-height-box{
+    height: 300px;
+    max-height: 200px;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+

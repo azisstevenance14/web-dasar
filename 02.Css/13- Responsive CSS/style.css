@@ -1,0 +1,124 @@
+/* 
+
+===============================================
+Responsive CSS
+===============================================
+Responsive CSS digunakan agar wibsite dapat 
+tampilan dengan ukuran layar perangkat
+
+pada contoh ini kita menggunakan :
+
+1. display 
+2. flex-wrap
+3. Media Query
+4. max-width
+
+*/
+
+/* 
+=================================================
+Style Dasar
+=================================================
+*/
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.deskripsi{
+    text-align: center;
+}
+
+
+/* 
+===================================================
+Container
+===================================================
+Kita menggunakan Flexbox agar box dapat berada dalam
+satu baris
+*/
+
+.container{
+    display: flex;
+
+    /* 
+        Memberikan jarak antar box
+    */
+    gap: 20px;
+
+    /* 
+        Jarak ruang tidak cukup,
+        item berikutnya turun ke baris berikutnya.
+    */
+    flex-wrap: wrap;
+}
+
+/* 
+====================================================
+BOX
+====================================================
+*/
+
+.box{
+    /* 
+    flex:1 membuat setiap box mendapatkan ruang yang tersedia  
+    */
+
+    flex: 1;
+
+    /* 
+     tinggi box
+    */
+
+    height: 150px;
+
+    /* 
+        Membuat isi berada di tengah
+    */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 
+        Tampilan Box
+    */
+    background-color: lightblue;
+    border: 2px solid blue;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+/* 
+
+=======================================================
+Media Query
+=======================================================
+Aturan di bawah ini akan aktif 
+ketika lebar layar maksimal 768px.
+
+768px biasanya digunakan sebagai salah satu breakpoint
+untuk tablet/mobile
+
+*/
+
+@media (max-width:768px){
+    /* 
+        Ketika layar menjadi kecil,
+        box akan disusun secara vertikal.
+    */
+
+    .container{
+        display: block;
+    }
+
+    .box{
+        margin: 20px;
+    }
+}
+

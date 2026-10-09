@@ -1,0 +1,78 @@
+/* Grouping CSS
+
+Grouping digunakan ketika beberapa selector membutuhkan aturan yang sama.
+
+polda Dasarnya :
+
+selector1,seletor2,selector3 {
+
+    proprety : value;
+}
+
+Perhatikan tanda :
+
+, (koma) digunakan untuk memisahkan beberapa selector
+
+
+
+*/
+
+
+/* 01. Grouping element selector
+
+mempunya tiga elemant selector :
+
+h1
+h2
+p
+
+ketiga selector tersebut kita gabungkan menggunakan tanda , (koma)
+
+*/
+
+h1,h2,p{
+    /* 
+    color adalah property.
+
+    blue adalah Value.
+
+    karena selector h1, h2, dan p digabungkan, ketiganya akan mendapatkan warna yang sama
+    
+    */
+
+    color: blue;
+
+}
+
+/* 02. grouping class selector
+
+sekarang kita mempunyai tiga class :
+
+.info 
+.peringatan
+.sukses
+
+kita bisa menggabungkan ketiga class tersebut 
+
+
+*/
+
+.info, .peringatan, .sukses {
+    /* 
+     semua class tersbut mendapatkan ukuran yang sama dan warna yang sama, ukuran yang sama, dan ketebalan yang sama
+    */
+
+    color: brown;
+    font: 18px;
+    font-weight: bold;
+
+}
+
+/* 
+=============================================================================================================================================
+
+INFO PENTING WALAUPUN KITA BISA MELAKUKAN GROUPING KITA JUGA BISA MEMBERIKAN STYLE YANG BERBEDA PADA MASING-MASING SELECTOR DAN CLASS TERSEBUT
+
+=============================================================================================================================================
+
+*/

@@ -1,0 +1,41 @@
+/* CSS dasar */
+
+/* CSS digunakan untuk mengatur tampilan HTML.
+
+   pola dasar CSS :
+
+   selector {
+        property : value;
+   }
+
+*/
+
+/* 01. Selector
+
+ h2 adalah selector
+
+ artinya kita memilih semua elemen <h2> yang ada di halaman HTML
+
+*/
+
+h2{
+    /* 02. Property 
+    
+    color adalah property
+
+    Property menentukan bagian dari tampilan yang ingin kita ubah.    
+    
+    */
+
+    color: blue;
+
+    /*  03. Value
+
+    blue adalah value.
+
+    Value menentukan nilai yang kita berikan kepada property tersebut
+    
+    
+    
+    */
+}

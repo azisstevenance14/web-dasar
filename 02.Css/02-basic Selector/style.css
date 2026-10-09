@@ -1,0 +1,79 @@
+/* Basic Selector
+
+pada metari ini kita belajar :
+
+1. Element Selector
+2. Class Selector
+3. ID Selector
+
+*/
+
+/* 01. Element Selector
+
+    bentuk dasarnya :
+    
+    nama-tag {
+        property : value;
+    
+    }
+
+
+*/
+
+/* Contoh element Selector html <p> */
+p{ 
+    color: green;
+    font-size: 18px;
+}
+
+/* karena kita memilih element <p> 
+p{
+ .......
+} 
+
+maka semua <p> di html akan terkena style ini.
+tidak peduli apakah <p> tersebut mempunyai class atau id
+
+*/
+
+
+/* 02. class selector
+
+untuk memilih class, CSS menggunakan :
+
+.nama-class
+
+Perhatikan untuk memanggil selector class pakai tanda titik di depan nama :
+.judul{
+ ........
+
+}
+
+*/
+
+/* Contoh selector class */
+.nama-class{
+    color: blue;
+    font-size: 28px;
+}
+
+
+/* 03. ID Selector
+
+untuk memilih id, css menggunaka :
+
+#nama-id
+
+Perhatikan Tanda pagar
+
+#nama-id{
+    .........................
+}
+
+*/
+
+#nama-id{
+    color: purple;
+    font-size: 30px;
+}
+

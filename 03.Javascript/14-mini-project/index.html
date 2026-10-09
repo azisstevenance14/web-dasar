@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Mini</title>
+</head>
+<body>
+    <!-- Header -->
+     <header class="header">
+        <h1 class="label">Personal Dashboard</h1>
+        <p>Selamat datang di ruang Belajarku!</p>
+     </header>
+
+     <!-- Main (konten Utama)-->
+     <main class="container">
+
+        <!-- Profil Card -->
+        <section class="card profile-card">
+            <div class="avatar">A</div>
+            <div>
+                <p class="label">My Profile</p>
+                <h2>Azis Steven S. Ance</h2>
+                <p>Web Developer</p>
+            </div>
+        </section>
+            
+            <!-- Section progress -->
+        <section class="card progress-card">
+                <p class="label">Progress Belajar</p>
+
+                <!-- Agka diperbarui lewat Javascript -->
+                <h2 id="jumlah-selesai">0 dari 0</h2>
+
+                <!-- Persentase juga di perbarui lewat Javascript -->
+                 <p id="persentase">0% aktivitas selesai</p>
+
+                 <!-- Wadah progress Bar -->
+                  <div class="progress-track">
+                        <div id="progress-bar" class="progress-bar"></div>
+                  </div>
+        </section>
+
+        <!-- Daftar Aktivitas -->
+        <section class="card activities-card">
+            <h2>Aktivitas Belajar</h2>
+            <p class="description">
+                Tandai aktivitas yang sudah selesai
+            </p>
+
+            <!-- Javascript akan membuat item aktivitas didalam ul -->
+            <ul id="daftar-aktivitas" class="activity-list"></ul>
+        </section>
+     </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

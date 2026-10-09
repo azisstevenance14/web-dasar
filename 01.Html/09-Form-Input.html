@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Input</title>
+</head>
+<body>
+    <!-- Form digunakan untuk menerima data dari pengguna -->
+    <!-- Contoh penggunaan Form :
+         -Login
+         -Daftar Akun
+         -Form Kontak
+         -Pencarian
+         -Pemesanan
+         -Pengisian Data  
+    -->
+
+    <!-- 01. Form -->
+    <!-- <form> adalah wadah utama untuk form
+         Jadi kalau kita ingin membuat kumpulan input yang digunakan untuk mengirim data,biasanya input tersebut berada di dalam <form>        
+    -->
+
+    <form>
+        <!--A. Label -->
+        <!-- <label> digunakan untuk memberikan keterangan -->
+        <!-- Contoh :
+            Nama Lengkap 
+            email
+            password
+        -->
+
+        <label for="nama">Nama Lengkap : </label>
+
+        
+        <!--B. Input -->
+        <!-- <input> digunakan untuk membuat tempat pengguna memasukan teks biasa -->
+        <!-- type="text", artinya ini digunakan untuk memasukan teks biasa -->
+        <!-- id="nama", adalah identitas khusus dari input ini -->
+        <!-- placeholder adalah tulisan petunjuk yang muncul di dalam kotak input sebelum diisi -->
+
+        <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukan Nama Lengkap"
+        
+        >
+        <br><br><hr>
+
+        <!--C. input Email -->
+        <label for="email">Email :</label>
+        <!-- type="email", digunakan untuk input elamat email -->
+        <!-- Browser dapat membantu melakukan pengecekan apakah format yang dimasukan terlihat seperti email -->
+         
+
+         <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Masukan Email"
+        
+        >
+
+        <br><br><hr>
+        <!--D. input Password -->
+        <label for="password">Masukan Password :</label>
+
+        <!-- type="password", membuat karakter yang diketika tidak terlihat secara langsung -->
+
+         <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Masukan Password"
+        
+        >
+
+        <br><br><hr>
+
+        <!--E. Input Number  -->
+        <!-- type="number", digunakan untuk memasukan data-->
+        <label for="umur">Umur :</label>
+
+        <input
+         type="number"
+         id="umur"
+         name="umur"
+         placeholder="Masukan Umur"
+        >
+
+        <br><br><hr>
+
+        <!--F. Input Date -->
+        <!-- type="date", digunakan untuk memilih tanggal -->
+        <!-- browser biasanya akan menyediakan tampilan kalender -->
+        <label for="tanggal">Tanggal Lahir :</label>
+        <input
+            type="date"
+            id="tanggal"
+            name="tanggal"
+        
+        >
+        <br><br><hr>
+
+
+        <!--G. Radio Button  -->
+        <p>Jenis Kelamin :</p>
+
+        <!-- type="radio", digunakan ketika pengguna harus memilih satu pilihan dari beberapa pilihan -->
+         <input
+         type="radio"
+         id="laki-laki"
+         name="janis_kelamin"
+         value="laki-laki"       
+         >
+
+         <label for="laki">Laki-Laki</label>
+
+         <input
+         type="radio"
+         id="permpuan"
+         name="janis_kelamin"
+         value="Perempuan"       
+         >
+
+         <label for="perempuan">Perempuan</label>
+
+        <br><br><hr>
+
+        <!--H. CHECKBOX  -->
+        <p>Hobi :</p>
+        <!-- type="checkbox", digunakan ketika pengguna boleh memilih lebih mudah -->
+         <input
+         type="checkbox"
+         id="membaca"
+         name="hobi"
+         value="membaca"       
+         >
+
+         <label for="perempuan">Membaca</label>
+         <input
+         type="checkbox"
+         id="olahraga"
+         name="hobi"
+         value="olahraga"       
+         >
+
+         <label for="perempuan">Musik</label>
+
+         <input
+         type="checkbox"
+         id="musik"
+         name="hobi"
+         value="musik"       
+         >
+
+         <label for="perempuan">Musik</label>
+         <br><br><hr>
+
+
+         <!--I. TextArea  -->
+         <label for="pesan">Pesan :</label>
+
+         <!-- <textarea>, digunakan untuk memasukan teks yang lebih panjang -->
+            <br>
+        <textarea 
+            id="pesan"
+            name="pesan"
+            rows="5"
+            cols="40"
+            placeholder="Tulis Pesan di sini..............."
+        
+        >
+
+        </textarea>
+        <br><br><hr>
+
+        <!--J. Select dan Option  -->
+        <label for="kota">Pilih Kota :</label>
+        <!-- <select> digunakan untuk membuat pilihan berbentuk dropdown -->
+        <!-- <option> adalah pilihan yang tersedia -->
+        <select id="kota" name="kota">
+            <option value="manado">Manado</option>
+            <option value="gorontalo">Gorontalo</option>
+            <option value="palu">Palu</option>
+            <option value="kendari">Kendari</option>
+            <option value="mamuju">Mamuju</option>
+        </select>
+        <br><br><hr>
+
+        <!--K. Required  -->
+        <label for="telepon">Nomor Telepon :</label>
+        <!-- required berarti input wajib diisi -->
+         <input
+          type="text"
+          id="telepon"
+          name="telepon"
+          placeholder="Masukan Nomor Telepon"
+          required     
+         >
+
+         <br><br><hr>
+
+
+        <!--L. Button -->
+        <!-- <button> digunakan untuk membuat tombol -->
+        <!-- type="submit" berarti tombol ini digunakan untuk mengirim form -->
+
+        <button type="submit">
+            kirim data
+        </button>
+
+        <!-- 
+            form ini baru tampilan dan tempat memasukan data.
+            data belum benar-benar disimpan ke database
+
+            untuk membuat data di kirim dan proses, nanti kita akan belajar back end
+
+        -->
+
+
+    </form>
+    
+</body>
+</html>

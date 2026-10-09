@@ -1,0 +1,211 @@
+/* 
+
+==========================================
+FlexBox
+==========================================
+Flexbox digunakan untuk mengatur susunan 
+beberapa element
+
+Konsep utama :
+Container 
+
+    |
+   Item
+
+*/
+
+/* 
+=============================================
+01. Flex
+=============================================
+
+Display: flex membuat element menjadi flex container
+
+element yang berada dihalaman disebut Flex Item
+
+*/
+
+.flex-container{
+    display: flex;
+    border:2px solid blue;
+    padding: 20px;
+
+}
+
+/* 
+
+===============================================
+02. Flex Item
+===============================================
+
+*/
+.flex-item{
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 5px;
+}
+
+/* 
+
+================================================
+03. Flex Direction
+================================================
+flex-direction menentukan arah susunan item
+
+row -> dari kiri ke kanan
+column -> dari atas ke bawah
+
+*/
+
+.direction-container{
+    display: flex;
+    /* 
+        Item disusun dari kiri ke kanan
+    */
+    flex-direction: row;
+    border: 2px solid green;
+    padding: 20px;
+
+}
+
+.direction-item{
+    background-color: lightgreen;
+    border: 2px solid green;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+/* 
+
+================================================
+04. Justify Content
+================================================
+Justify Content digunakan untuk mengatur item pada
+Main Axis
+
+Contoh :
+center
+flex-end
+space-between
+space-around
+space-evenly
+*/
+
+.justify-container{
+    display: flex;
+    /* 
+        Item berada di tengah secara horizontal
+    */
+    justify-content: center;
+    border: 2px solid orange;
+    padding: 20px;
+}
+
+.justify-item{
+    background-color: lightyellow;
+    border: 2px solid orange;
+    padding: 20px;
+    margin: 5px;
+}
+
+/* 
+
+=================================================
+05. Align Items
+=================================================
+Align items digunakan untuk mengatur posisi item 
+pada cross axis
+
+Contoh :
+flex-start
+center
+flex-end
+strecth
+
+*/
+
+.align-container{
+    display: flex;
+
+    /* 
+        Container dibuat tinggi supaya efek align-itmes lebih mudah terlihat
+    */
+    height: 200px;
+
+    /* 
+        Item ditempatkan di tengah
+    */
+    align-items: center;
+    border: 2px solid purple;
+    padding: 20px;
+}
+
+.align-item{
+    background-color: plum;
+    border: 2px solid purple;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+/* 
+
+===================================================
+06. GAP
+===================================================
+gap digunakan untuk memberikan jarak antar flex item
+
+berbeda dengan margin, gap khusus digunakan untuk mengatur jarak antar item dalam contianer
+
+*/
+
+.gap-container{
+    display: flex;
+    /* 
+        Jarak antar item = 20px
+    */
+
+    gap: 20px;
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.gap-item{
+    background-color: lightcoral;
+    border: 2px solid red;
+    padding: 20px;
+}
+
+
+/* 
+
+====================================================
+07. flex wrap
+====================================================
+Flex wrap menentukan apakah item boleh turun ke baris 
+berikutnya, ketika ruang tidak cukup
+
+*/
+
+.wrap-container{
+    display: flex;
+    /* 
+        Jika Ruang tidak cukup, item akan turun ke baris berikutnya
+    */
+
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 400px;
+    border: 2px solid brown;
+    padding: 20px;
+}
+
+.wrap-item{
+    width: 100px;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}

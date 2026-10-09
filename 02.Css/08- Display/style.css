@@ -1,0 +1,93 @@
+/* 
+
+======================================
+Display
+======================================
+Display digunakan untuk mengatur bagaimana sebuah element ditampilkan pada halaman.
+
+Value dari display :
+block
+inline
+inline-block
+none
+
+*/
+
+/* 
+
+======================================
+1. Display Block
+======================================
+Block biasanya mengambil satu baris penuh.
+Artinya element berikutnya akan turun ke baris berikutnya.
+
+*/
+.block-box{
+    display: block;
+    width: 300px;
+    padding: 20px;
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+
+
+/* 
+
+======================================
+2. Display Inline
+======================================
+Inline membuat element berada dalam satu baris dengan element lainnya.
+
+contohnya <span>
+
+*/
+
+.inline-box{
+    display: inline;
+    background-color: lightgreen;
+    border: 2px solid green;
+    margin: 2px;
+}
+
+
+
+/* 
+
+======================================
+03. Display Inline-block
+======================================
+Inline block merupakan gabungan Konsep :
+inline + block
+
+artinya element bisa berada satu baris,
+tetapi kita masih mengatur width dan height seperti box.
+
+*/
+
+.inline-block-box{
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    height: 60px;
+    padding: 10px;
+    background-color: lightyellow;
+    border: 2px solid orange;
+}
+
+/* 
+
+======================================
+04. Display None
+======================================
+None membuat element tidak ditampilkan
+
+element tersebut tidak terlihat dan tidak mengambil ruang pada halaman
+
+*/
+
+.none-box{
+    display: none;
+    background-color: lightcoral;
+    border: 2px solid red;
+    padding: 20px;
+}
